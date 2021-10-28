@@ -12,7 +12,13 @@ export default function Menu() {
         Inicio
       </Link>
       <Link className="block" to="/almacen">
-        Almacen 
+        ALMACEN 
+      </Link>
+      <Link className="block" to="/vehiculos">
+        VEHICULOS
+      </Link>
+      <Link className="block" to="/sistemas">
+        SISTEMAS
       </Link>
      </div>
   </div>

@@ -8,27 +8,36 @@ import {
   Link,
 } from 'react-router-dom';
 
+import Vehiculos from './Vehiculos';
 import Almacen from './Almacen';
 import Inicio from './Inicio';
 import Menu from './components/Menu';
+import Sistemas from './Sistemas';
+
 
 
 export default function App() {
   return (
   
-    <Router>
+  <Router>
       <div className="grid grid-cols-6 gap-4">
       <Menu/>
-      <Switch className="col-span-2 bg-blue-100">
-        <Route path="/almacen">
-          <Almacen />
-        </Route>
-        <Route path="/">
+    <Switch className="col-span-2 bg-blue-100">
+      <Route path="/">
           <Inicio />
-        </Route>
-      </Switch>
+      </Route>
+      <Route path="/almacen">
+          <Almacen />
+      </Route>
+      <Route path="/vehiculos">
+          <Vehiculos />
+      </Route>
+      <Route path="/sistemas">
+          <Sistemas />
+      </Route>
+    </Switch>
       </div>
-    </Router>
+  </Router>
   );
 }
 
