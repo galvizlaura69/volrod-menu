@@ -8,11 +8,15 @@ import {
   Link,
 } from 'react-router-dom';
 
+import Sistemas from './Sistemas';
 import Vehiculos from './Vehiculos';
 import Almacen from './Almacen';
 import Inicio from './Inicio';
 import Menu from './components/Menu';
-import Sistemas from './Sistemas';
+import Reportediario from './Reportediario';
+import Talentohumano from './Talentohumano';
+import Solicitudesth from './Solicitudesth';
+
 
 
 
@@ -22,7 +26,7 @@ export default function App() {
   <Router>
       <div className="grid grid-cols-6 gap-4">
       <Menu/>
-    <Switch className="col-span-2 bg-blue-100">
+    <Switch className="col-span-6 bg-blue-100">
       <Route path="/">
           <Inicio />
       </Route>
@@ -35,6 +39,16 @@ export default function App() {
       <Route path="/sistemas">
           <Sistemas />
       </Route>
+      <Route path="/reportediario">
+          <Reportediario />
+      </Route>
+      <Route path="/talentohumano">
+          <Talentohumano />
+      </Route>
+      <Route path="/solicitudesth">
+          <Solicitudesth />
+      </Route>
+
     </Switch>
       </div>
   </Router>

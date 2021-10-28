@@ -8,17 +8,30 @@ export default function Menu() {
 
   <div className=" w-full h-screen bg-gray-800">
     <div>
+      <h2>Bienvenido superadmin</h2>
       <Link className="block" to="/">
-        Inicio
+        Dash board
       </Link>
       <Link className="block" to="/almacen">
-        ALMACEN 
+        ALMACÉN 
       </Link>
       <Link className="block" to="/vehiculos">
-        VEHICULOS
+        VEHÍCULOS
       </Link>
       <Link className="block" to="/sistemas">
         SISTEMAS
+      </Link>
+     </div>
+
+     <div>
+      <Link className="block" to="/reportediario">
+        REPORTE DIARIO
+      </Link>
+      <Link className="block" to="/talentohumano">
+        TALENTO HUMANO
+      </Link>
+      <Link className="block" to="/solicitudesth">
+        SOLICITUDES TH
       </Link>
      </div>
   </div>
