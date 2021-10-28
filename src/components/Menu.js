@@ -7,30 +7,30 @@ export default function Menu() {
     return (
 
   <div className=" w-full h-screen bg-gray-800">
-    <div>
-      <h2>Bienvenido superadmin</h2>
+    <h2>Bienvenido superadmin</h2>
+    <div>    
       <Link className="block" to="/">
         Dash board
       </Link>
-      <Link className="block" to="/almacen">
+      <Link className="block text-xs" to="/almacen">
         ALMACÉN 
       </Link>
-      <Link className="block" to="/vehiculos">
+      <Link className="block text-xs" to="/vehiculos">
         VEHÍCULOS
       </Link>
-      <Link className="block" to="/sistemas">
+      <Link className="block text-xs" to="/sistemas">
         SISTEMAS
       </Link>
      </div>
 
      <div>
-      <Link className="block" to="/reportediario">
+      <Link className="block text-xs" to="/reportediario">
         REPORTE DIARIO
       </Link>
-      <Link className="block" to="/talentohumano">
+      <Link className="block text-xs" to="/talentohumano">
         TALENTO HUMANO
       </Link>
-      <Link className="block" to="/solicitudesth">
+      <Link className="block text-xs" to="/solicitudesth">
         SOLICITUDES TH
       </Link>
      </div>
