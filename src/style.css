@@ -3,3 +3,30 @@ h1, p {
 }
 
 
+.icon-menu{
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: auto;
+  
+}
+
+ul {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+  list-style-position: outside;
+}
+ 
+li::before { 
+  content: "";
+  border-color: transparent gray;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
