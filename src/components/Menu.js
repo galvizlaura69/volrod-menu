@@ -5,14 +5,14 @@ export default function Menu() {
   return (
     <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 p-5">
       <img className=" m-auto mt-5 w-3/5" src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.02%20AM.jpeg?alt=media&token=d4216141-6be3-4f1b-8258-d19b8dcece17"/>
-      <h2 className="pb-8 text-xs pt-6 text-white">
+      <h2 className=" text-xs pt-6 text-white">
         <img
           className="inline-block brand-icon"
           src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.18%20AM.jpeg?alt=media&token=b9882166-61f9-43a5-bcb1-6b65c923da8d"
         />
         <b className="text-red-500">Bienvenido</b> superadmin
       </h2>
-      <Link className="block pb-16 text-xs" to="/">
+      <Link className="block  text-xs" to="/">
       <p className="pb-8 text-xs pt-6 text-white">
       <img
           className="inline-block brand-icon"
@@ -21,14 +21,14 @@ export default function Menu() {
         <b className="text-red-500">Dash</b>board
       </p>
       </Link>
-      <div className="grid grid-cols-2 pb-9 items-stretch">
-        <div className="col-span-1  ">
+      <div className="flex flex-wrap overflow-hidden pb-6">
+        <div className="w-1/3 ">
           <img
-            className=" m-auto mt-2 icon-menu  object-center opacity-20	"
+            className=" mt-2 icon-menu  object-center opacity-20	"
             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
           />
         </div>
-        <div className="col-span-1 ">
+        <div className="w-2/3  ">
           <ul>
             <li>
               {' '}
@@ -51,14 +51,14 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pb-9 items-stretch">
-        <div className="col-span-1  ">
+      <div className="flex flex-wrap overflow-hidden pb-6">
+         <div className="w-1/3 ">
           <img
-            className=" m-auto mt-2 icon-menu  object-center opacity-20	"
+            className=" mt-2 icon-menu  object-center opacity-20	"
             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
           />
         </div>
-        <div className="col-span-1 ">
+        <div className="w-2/3  ">
           <ul>
             <li>
               {' '}
@@ -81,14 +81,14 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pb-9 items-stretch">
-        <div className="col-span-1  ">
+      <div className="flex flex-wrap overflow-hidden pb-6">
+         <div className="w-1/3 ">
           <img
-            className=" m-auto mt-2 icon-menu  object-center opacity-20	"
+            className=" mt-2 icon-menu  object-center opacity-20	"
             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
           />
         </div>
-        <div className="col-span-1 ">
+        <div className="w-2/3  ">
           <ul>
             <li>
               {' '}
@@ -111,14 +111,14 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pb-9 items-stretch">
-        <div className="col-span-1  ">
+      <div className="flex flex-wrap overflow-hidden pb-6">
+        <div className="w-1/3 ">
           <img
-            className=" m-auto mt-2 icon-menu  object-center opacity-20	"
+            className="mt-2 icon-menu  object-center opacity-20	"
             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
           />
         </div>
-        <div className="col-span-1 ">
+        <div className="w-2/3  ">
           <ul>
             <li>
               {' '}

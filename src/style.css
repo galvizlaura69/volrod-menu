@@ -17,6 +17,7 @@ p {
   padding: 0 1em;
   list-style: none;
   list-style-position: outside;
+  min-width:fit-content;
 }
 .menu li {
   margin-top: -8px;
