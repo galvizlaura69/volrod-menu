@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 export default function Menu() {
   return (
-    <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 p-5">
+    <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
+      <div className="listadomenu pl-4">
       <img className=" m-auto mt-5 w-3/5" src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.02%20AM.jpeg?alt=media&token=d4216141-6be3-4f1b-8258-d19b8dcece17"/>
       <h2 className=" text-xs pt-6 text-white">
         <img
@@ -139,6 +140,24 @@ export default function Menu() {
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+      <div className="h-1/5 bg-gray-900">
+         <ul>
+             <li>
+              <Link className=" p-2 pl-5 text-xs text-gray-400 m-0" to="/vip">
+                VIP
+              </Link>
+              <img
+             className="inline-block brand-icon float-right mr-5"
+             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.18%20AM.jpeg?alt=media&token=b9882166-61f9-43a5-bcb1-6b65c923da8d"
+             />
+              <img
+             className="inline-block brand-icon float-right "
+             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.18%20AM.jpeg?alt=media&token=b9882166-61f9-43a5-bcb1-6b65c923da8d"
+             />
+             </li>
+         </ul>
       </div>
    </div>   
   );
