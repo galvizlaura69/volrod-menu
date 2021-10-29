@@ -32,13 +32,11 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/almacen">
                 ALMACÉN
               </Link>
             </li>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/vehiculos">
                 VEHÍCULOS
               </Link>
@@ -62,13 +60,11 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/reportediario">
                 REPORTE DIARIO
               </Link>
             </li>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/talentohumano">
                 TALENTO HUMANO
               </Link>
@@ -92,13 +88,11 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/calidad">
                 CALIDAD
               </Link>
             </li>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/compras">
                 COMPRAS
               </Link>
@@ -122,13 +116,11 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/hse">
                 HSE
               </Link>
             </li>
             <li>
-              {' '}
               <Link className="block text-xs text-gray-400 m-0" to="/operaciones">
                 OPERACIONES
               </Link>
@@ -153,7 +145,7 @@ export default function Menu() {
              src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.33.15%20PM.jpeg?alt=media&token=3273a79c-b3a7-4b4c-8a1d-89977b3f8c43"
              />
               <img
-             className="inline-block brand-icon float-right "
+             className="inline-block brand-icon float-right"
              src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.33.06%20PM.jpeg?alt=media&token=d1f177c2-8476-439e-86a2-29297cf251bf"
              />
              </li>

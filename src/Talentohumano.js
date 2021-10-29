@@ -4,7 +4,7 @@ import './style.css';
 export default function Talentohumano() {
     return (
       <div>
-   <h1>talento humano</h1>
+   <h1>Talento humano</h1>
 </div>
   );
 }

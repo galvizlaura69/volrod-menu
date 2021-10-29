@@ -47,6 +47,27 @@ export default function App() {
             <Route path="/solicitudesth">
               <Solicitudesth />
             </Route>
+            <Route path="/contabilidad">
+              <Reportediario />
+            </Route>
+            <Route path="/compras">
+              <Talentohumano />
+            </Route>
+            <Route path="/calidad">
+              <Solicitudesth />
+            </Route>
+            <Route path="/hse">
+              <Reportediario />
+            </Route>
+            <Route path="/operaciones">
+              <Talentohumano />
+            </Route>
+            <Route path="/comercial">
+              <Solicitudesth />
+            </Route>
+            <Route path="/vip">
+              <Solicitudesth />
+            </Route>
 
             <Route path="/">
               <Inicio />

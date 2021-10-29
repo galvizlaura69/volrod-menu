@@ -4,7 +4,7 @@ import './style.css';
 export default function Reportediario() {
     return (
       <div>
-   <h1>reporte diario</h1>
+   <h1>Reporte diario</h1>
 </div>
   );
 }
