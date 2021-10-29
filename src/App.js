@@ -20,41 +20,41 @@ import Menu from './components/Menu';
 export default function App() {
   return (
     <Router>
-      <div className="grid grid-cols-6 gap-4">
+      <div className="flex flex-wrap overflow-hidden">
         <Menu />
+        <div className="w-5/6 min-w-min p-5 bg-green-300 overflow-hidden">
+          <Switch>
+            <Route path="/almacen">
+              <Almacen />
+            </Route>
 
-        <Switch className="col-span-6 bg-blue-100">
-          <Route path="/almacen">
-            <Almacen />
-          </Route>
+            <Route path="/talentohumano">
+              <Talentohumano />
+            </Route>
 
-          <Route path="/talentohumano">
-            <Talentohumano />
-          </Route>
+            <Route path="/sistemas">
+              <Sistemas />
+            </Route>
+            <Route path="/vehiculos">
+              <Vehiculos />
+            </Route>
+            <Route path="/reportediario">
+              <Reportediario />
+            </Route>
+            <Route path="/talentohumano">
+              <Talentohumano />
+            </Route>
+            <Route path="/solicitudesth">
+              <Solicitudesth />
+            </Route>
 
-          <Route path="/sistemas">
-            <Sistemas />
-          </Route>
-          <Route path="/vehiculos">
-            <Vehiculos />
-          </Route>
-          <Route path="/reportediario">
-            <Reportediario />
-          </Route>
-          <Route path="/talentohumano">
-            <Talentohumano />
-          </Route>
-          <Route path="/solicitudesth">
-            <Solicitudesth />
-          </Route>
-
-          <Route path="/">
-            <Inicio />
-          </Route>
-        </Switch>
+            <Route path="/">
+              <Inicio />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
 }
-
 

@@ -9,6 +9,9 @@ p {
   height: auto;
   filter: invert(100);
 }
+.menu .brand-icon {
+  width: 30px;
+}
 
 .menu {
   padding: 0 1em;

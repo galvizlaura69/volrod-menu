@@ -3,10 +3,23 @@ import { Link } from 'react-router-dom';
 
 export default function Menu() {
   return (
-    <div className=" menu w-full min-w-min	h-screen bg-gray-800 p-5">
-      <h2 className="pb-8 text-xs pt-6">Bienvenido superadmin</h2>
+    <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 p-5">
+      <img className=" m-auto mt-5 w-3/5" src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.02%20AM.jpeg?alt=media&token=d4216141-6be3-4f1b-8258-d19b8dcece17"/>
+      <h2 className="pb-8 text-xs pt-6 text-white">
+        <img
+          className="inline-block brand-icon"
+          src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.18%20AM.jpeg?alt=media&token=b9882166-61f9-43a5-bcb1-6b65c923da8d"
+        />
+        <b className="text-red-500">Bienvenido</b> superadmin
+      </h2>
       <Link className="block pb-16 text-xs" to="/">
-        Dash board
+      <p className="pb-8 text-xs pt-6 text-white">
+      <img
+          className="inline-block brand-icon"
+          src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.02.11%20PM.jpeg?alt=media&token=183c14ff-4dc0-40ed-bc16-8b3d5e2cf688"
+        />
+        <b className="text-red-500">Dash</b>board
+      </p>
       </Link>
       <div className="grid grid-cols-2 pb-9 items-stretch">
         <div className="col-span-1  ">
