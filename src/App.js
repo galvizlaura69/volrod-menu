@@ -15,6 +15,13 @@ import Inicio from './Inicio';
 import Reportediario from './Reportediario';
 import Talentohumano from './Talentohumano';
 import Solicitudesth from './Solicitudesth';
+import Contabilidad from './Contabilidad';
+import Compras from './Compras';
+import Calidad from './Calidad';
+import Hse from './Hse';
+import Operaciones from './Operaciones';
+import Comercial from './Comercial';
+import Vip from './Vip';
 import Menu from './components/Menu';
 
 export default function App() {
@@ -48,25 +55,25 @@ export default function App() {
               <Solicitudesth />
             </Route>
             <Route path="/contabilidad">
-              <Reportediario />
+              <Contabilidad/>
             </Route>
             <Route path="/compras">
-              <Talentohumano />
+              <Compras />
             </Route>
             <Route path="/calidad">
-              <Solicitudesth />
+              <Calidad />
             </Route>
             <Route path="/hse">
-              <Reportediario />
+              <Hse />
             </Route>
             <Route path="/operaciones">
-              <Talentohumano />
+              <Operaciones />
             </Route>
             <Route path="/comercial">
-              <Solicitudesth />
+              <Comercial />
             </Route>
             <Route path="/vip">
-              <Solicitudesth />
+              <Vip />
             </Route>
 
             <Route path="/">
