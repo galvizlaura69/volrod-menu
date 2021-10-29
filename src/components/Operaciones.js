@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.css';
 
-export default function Inicio() {
+export default function Operaciones() {
     return (
     <div className=" w-full">
-     <h1>contenido</h1>
+     <h1>Operaciones</h1>
     </div>
   );
 }

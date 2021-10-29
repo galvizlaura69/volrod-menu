@@ -142,7 +142,7 @@ export default function Menu() {
         </div>
       </div>
     </div>
-      <div className="h-1/5 bg-gray-900">
+      <div className="h-1/4 bg-gray-900">
          <ul>
              <li>
               <Link className=" p-2 pl-5 text-xs text-gray-400 m-0" to="/vip">

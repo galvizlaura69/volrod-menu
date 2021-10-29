@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.css';
 
-export default function Inicio() {
+export default function Calidad() {
     return (
     <div className=" w-full">
-     <h1>contenido</h1>
+     <h1>Calidad</h1>
     </div>
   );
 }
