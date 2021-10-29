@@ -1,32 +1,36 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
 }
 
-
-.icon-menu{
-  display: block;
-  margin: auto;
+.menu .icon-menu {
+  display: flex;
   width: 30px;
   height: auto;
-  
+  filter: invert(100);
 }
 
-ul {
-  margin: 0.75em 0;
+.menu {
   padding: 0 1em;
   list-style: none;
   list-style-position: outside;
 }
- 
-li::before { 
-  content: "";
-  border-color: transparent gray;
+.menu li {
+  margin-top: -8px;
+}
+.menu li::before {
+  content: '';
+  border-color: transparent white;
   border-style: solid;
-  border-width: 0.35em 0 0.35em 0.45em;
+  border-width: 0.25em 0 0.25em 0.35em;
   display: block;
   height: 0;
   width: 0;
-  left: -1em;
-  top: 0.9em;
+  left: -0.6em;
+  top: 0.75em;
   position: relative;
+}
+
+.menu .text-xs {
+  font-size: 10px;
 }
