@@ -37,3 +37,8 @@ p {
 .menu .text-xs {
   font-size: 10px;
 }
+
+.seleccionado{
+  background-color: red;
+  color: white;
+}

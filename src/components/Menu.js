@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Menu() {
   return (
@@ -13,7 +13,7 @@ export default function Menu() {
         />
         <b className="text-red-500">Bienvenido</b> superadmin
       </h2>
-      <Link className="block  text-xs" to="/">
+      <Link className="block pb-5  text-xs" to="/">
       <p className="pb-8 text-xs pt-6 text-white">
       <img
           className="inline-block brand-icon"
@@ -32,19 +32,19 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/almacen">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/almacen">
                 ALMACÉN
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/vehiculos">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/vehiculos">
                 VEHÍCULOS
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400" to="/sistemas">
+              <NavLink className="block text-xs text-gray-400" activeClassName="bg-red-800" to="/sistemas">
                 SISTEMAS
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -60,19 +60,19 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/reportediario">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/reportediario">
                 REPORTE DIARIO
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/talentohumano">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800"  to="/talentohumano">
                 TALENTO HUMANO
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400" to="/solicitudesth">
+              <NavLink className="block text-xs text-gray-400 " activeClassName="bg-red-800"   to="/solicitudesth">
                 SOlICITUDES TH
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -88,19 +88,19 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/calidad">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/calidad">
                 CALIDAD
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/compras">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/compras">
                 COMPRAS
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400" to="/contabilidad">
+              <NavLink className="block text-xs text-gray-400" activeClassName="bg-red-800" to="/contabilidad">
                 CONTABILIDAD
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -116,19 +116,19 @@ export default function Menu() {
         <div className="w-2/3  ">
           <ul>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/hse">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/hse">
                 HSE
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400 m-0" to="/operaciones">
+              <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800"b to="/operaciones">
                 OPERACIONES
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block text-xs text-gray-400" to="/comercial">
+              <NavLink className="block pb-2 text-xs text-gray-400" activeClassName="bg-red-800" to="/comercial">
                 COMERCIAL
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -136,10 +136,10 @@ export default function Menu() {
     </div>
       <div className="h-1/4 bg-gray-900">
          <ul>
-             <li>
-              <Link className=" p-2 pl-5 text-xs text-gray-400 m-0" to="/vip">
+             <li className="text-white-800">
+              <NavLink className=" p-2 pl-5 text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/vip">
                 VIP
-              </Link>
+              </NavLink>
               <img
              className="inline-block brand-icon float-right mr-5"
              src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.33.15%20PM.jpeg?alt=media&token=3273a79c-b3a7-4b4c-8a1d-89977b3f8c43"
