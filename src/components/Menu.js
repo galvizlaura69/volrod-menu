@@ -113,7 +113,7 @@ export default function Menu() {
             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
           />
         </div>
-        <div className="w-2/3  ">
+        <div className="w-2/3 pb-2 ">
           <ul>
             <li>
               <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/hse">
@@ -126,7 +126,7 @@ export default function Menu() {
               </NavLink>
             </li>
             <li>
-              <NavLink className="block pb-2 text-xs text-gray-400" activeClassName="bg-red-800" to="/comercial">
+              <NavLink className="block  text-xs text-gray-400" activeClassName="bg-red-800" to="/comercial">
                 COMERCIAL
               </NavLink>
             </li>
@@ -135,8 +135,8 @@ export default function Menu() {
       </div>
     </div>
       <div className="h-1/4 bg-gray-900">
-         <ul>
-             <li className="text-white-800">
+         <ul className="menu-vip">
+             <li>
               <NavLink className=" p-2 pl-5 text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/vip">
                 VIP
               </NavLink>
