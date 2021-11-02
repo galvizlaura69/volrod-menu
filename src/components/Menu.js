@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function Menu() {
   return (
-    <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
+    <div className=" menu w-1/7 overflow-hidden	h-screen bg-gray-800 ">
       <div className="listadomenu pl-4">
       <img className=" m-auto mt-5 w-3/5" src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.02%20AM.jpeg?alt=media&token=d4216141-6be3-4f1b-8258-d19b8dcece17"/>
       <h2 className=" text-xs pt-6 text-white">
