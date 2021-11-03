@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 export default function Menu() {
   return (
     <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
-      <div className="listadomenu pl-4">
+      <div className="listadomenu h-4/5 pl-4">
       <img className=" m-auto mt-5 w-3/5" src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.02%20AM.jpeg?alt=media&token=d4216141-6be3-4f1b-8258-d19b8dcece17"/>
       <h2 className=" text-xs pt-6 text-white">
         <img
@@ -14,7 +14,7 @@ export default function Menu() {
         <b className="text-red-500">Bienvenido</b> superadmin
       </h2>
       <Link className="block pb-6  text-xs" to="/">
-      <p className="pb-8 text-xs pt-6 text-white">
+      <p className="pb-5 text-xs pt-6 text-white">
       <img
           className="inline-block brand-icon"
           src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.02.11%20PM.jpeg?alt=media&token=183c14ff-4dc0-40ed-bc16-8b3d5e2cf688"
@@ -134,7 +134,7 @@ export default function Menu() {
         </div>
       </div>
     </div>
-      <div className="h-1/4 bg-gray-900">
+      <div className="h-1/5 bg-gray-900">
          <ul className="menu-vip">
              <li>
               <NavLink className=" p-2 pl-5 text-xs text-gray-400 m-0" activeClassName="bg-red-800" to="/vip">
