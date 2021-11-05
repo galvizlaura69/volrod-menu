@@ -11,15 +11,15 @@ export default function Menu() {
           className="inline-block brand-icon"
           src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.18%20AM.jpeg?alt=media&token=b9882166-61f9-43a5-bcb1-6b65c923da8d"
         />
-        <b className="text-red-500">Bienvenido</b> superadmin
+        <b className="text-red-500 pl-2">Bienvenido</b> superadmin
       </h2>
       <Link className="block pb-6  text-xs" to="/">
       <p className="pb-5 text-xs pt-6 text-white">
       <img
           className="inline-block brand-icon"
-          src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.02.11%20PM.jpeg?alt=media&token=183c14ff-4dc0-40ed-bc16-8b3d5e2cf688"
+          src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
         />
-        <b className="text-red-500">Dash</b>board
+        <b className="text-red-500 pl-5">Dash</b>board
       </p>
       </Link>
       <div className="flex flex-wrap overflow-hidden pb-6">
@@ -142,11 +142,11 @@ export default function Menu() {
               </NavLink>
               <img
              className="inline-block brand-iconvip float-right mr-5"
-             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-07.png?alt=media&token=c3523337-3de2-45ef-a7a0-9394a227d0c1"
+             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-06.png?alt=media&token=9028a99e-6d2e-497c-a7c3-f404b3da3fd5"
              />
               <img
              className="inline-block brand-iconvip float-right"
-             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-06.png?alt=media&token=bebe4590-467f-4e71-9e90-502fde8945c3"
+             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-07.png?alt=media&token=01c4c10c-bb22-4322-8293-4d859409be8d"
              />
              </li>
          </ul>
