@@ -55,3 +55,18 @@ p {
   background-color: red;
   color: white;
 }
+
+.boton_generico{
+  background:rgba(128, 128, 128, 0.493);
+  padding: 10px 15px;
+  color: white;
+  margin:2px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+input,select,.text_area{
+height: 30px;
+}
+
+
