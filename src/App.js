@@ -29,7 +29,7 @@ export default function App() {
     <Router>
       <div className="flex flex-wrap overflow-hidden">
         <Menu />
-        <div className="w-5/6 min-w-min p-5 bg-gray-100 overflow-hidden">
+        <div className="w-5/6 min-w-min  p-5 bg-gray-100 p-2 overflow-hidden">
           <Switch>
             <Route path="/almacen">
               <Almacen />

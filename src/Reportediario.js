@@ -3,20 +3,21 @@ import './style.css';
 
 export default function Reportediario() {
   return (
-    <div>
+    <div className=" max-h-full overflow-visible ">
       <h1>Reporte diario</h1>
+
       <form>
         <div className="block mb-2">
-          <label >Cedula: </label>
-          <input className="border-gray-500 border" type="number" placeholder="000000000" required />
+          <label className="w-1/5" >Cedula </label>
+          <input className="border-gray-500 border w-4/5" type="number" placeholder="000000000" required />
         </div>
         <div className="block mb-2">
-          <label >Fecha: </label>
+          <label >Fecha </label>
           <input className="border-gray-500 border" type="number" placeholder=" dd/mm/aa" required />
         </div>
         <div className="block mb-2">
-          <label>Lugar (Departamento,Municio,Vereda): </label>
-          <textarea className="border-gray-500 border" placeholder="donde" required />
+          <label className="w-1/5"><p>Lugar</p><p>(Departamento,Municio,Vereda)</p></label>
+          <textarea className="border-gray-500 border w-4/5" placeholder="donde" required />
         </div>
         <div className="block mb-2">
           <label>Actividad desarrollada: </label>
