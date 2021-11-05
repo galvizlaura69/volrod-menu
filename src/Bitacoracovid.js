@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.css';
 
-export default function Reportediario() {
+export default function BitacoraCovid() {
   return (
     <div className="p-5">
-      <h1>Reporte diario</h1>
+      <h1> Reporte bitacora Covid-19</h1>
 
       <form>
         <div className="flex mb-10">

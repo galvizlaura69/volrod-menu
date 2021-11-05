@@ -23,6 +23,7 @@ import Operaciones from './Operaciones';
 import Comercial from './Comercial';
 import Vip from './Vip';
 import Menu from './components/Menu';
+import BitacoraCovid from './BitacoraCovid';
 
 export default function App() {
   return (
@@ -71,6 +72,9 @@ export default function App() {
             </Route>
             <Route path="/comercial">
               <Comercial />
+            </Route>
+            <Route path="/bitacoracovid">
+              <BitacoraCovid />
             </Route>
             <Route path="/vip">
               <Vip />

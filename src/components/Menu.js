@@ -141,11 +141,11 @@ export default function Menu() {
                 VIP
               </NavLink>
               <img
-             className="inline-block brand-icon float-right mr-5"
+             className="inline-block brand-iconvip float-right mr-5"
              src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-07.png?alt=media&token=c3523337-3de2-45ef-a7a0-9394a227d0c1"
              />
               <img
-             className="inline-block brand-icon float-right"
+             className="inline-block brand-iconvip float-right"
              src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-06.png?alt=media&token=bebe4590-467f-4e71-9e90-502fde8945c3"
              />
              </li>

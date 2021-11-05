@@ -9,6 +9,9 @@ p {
   height: auto;
 }
 .menu .brand-icon {
+  width: 30px;
+}
+.menu .brand-iconvip {
   width: 15px;
 }
 
