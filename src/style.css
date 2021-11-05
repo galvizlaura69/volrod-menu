@@ -7,10 +7,9 @@ p {
   display: flex;
   width: 30px;
   height: auto;
-  filter: invert(100);
 }
 .menu .brand-icon {
-  width: 30px;
+  width: 15px;
 }
 
 .menu {
