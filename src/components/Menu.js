@@ -19,7 +19,7 @@ export default function Menu() {
           className="inline-block brand-icon"
           src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
         />
-        <b className="text-red-500 pl-5">Dash</b>board
+        <b className="text-red-500 pl-2">Dash</b>board
       </p>
       </Link>
       <div className="flex flex-wrap overflow-hidden pb-6">
