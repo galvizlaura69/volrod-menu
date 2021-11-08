@@ -27,7 +27,7 @@ export default function BitacoraCovid() {
         <div className="flex mb-10">
           <label className="w-1/5" >Numero de personas con las que tuvo contacto </label>
           <input className="border-gray-500 border w-1/5  ml-2  " type="number" placeholder="0" required />
-          <label className="w-1/5 pl-3">Nombres: </label>
+          <label className="w-1/5 pl-3">Nombres </label>
           <textarea className="border-gray-500 border w-2/5  ml-2 text_area" placeholder="Laura camilo" required />
         </div>
         <div className="flex mb-10">
@@ -75,7 +75,7 @@ export default function BitacoraCovid() {
         <div className="flex mb-10">
           <label className="w-1/5">Tiempo que duro la actividad </label>
           <input className="border-gray-500 border w-1/5  ml-2" type="text" placeholder="1 hora" required />
-          <label className="w-1/5 p-3">EPP Bioseguridad: </label>
+          <label className="w-1/5 p-3">EPP Bioseguridad </label>
           <select className="border-gray-500 border w-1/5 ml-2">
             <option value="quirurgico">Tapabocas quirúrgico</option>
             <option value="antifluidos">Tapabocas antifluidos</option>
