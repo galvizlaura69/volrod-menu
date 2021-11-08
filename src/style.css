@@ -65,6 +65,7 @@ p {
   margin:2px;
   text-decoration: none;
   border-radius: 10px;
+  display: inline-block;
 }
 
 input,select,.text_area{
