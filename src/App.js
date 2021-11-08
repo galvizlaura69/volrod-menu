@@ -23,7 +23,7 @@ import Operaciones from './Operaciones';
 import Comercial from './Comercial';
 import Vip from './Vip';
 import Menu from './components/Menu';
-import BitacoraCovid from './BitacoraCovid';
+import BitacoraCovid from './BitacoraCovid1';
 import PageTableCovid from './PageTablaCovid';
 
 export default function App() {
