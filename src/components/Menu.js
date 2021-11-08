@@ -11,22 +11,22 @@ export default function Menu() {
           className="inline-block brand-icon"
           src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.18%20AM.jpeg?alt=media&token=b9882166-61f9-43a5-bcb1-6b65c923da8d"
         />
-        <b className="text-red-500">Bienvenido</b> superadmin
+        <b className="text-red-500 pl-2">Bienvenido</b> superadmin
       </h2>
       <Link className="block pb-6  text-xs" to="/">
       <p className="pb-5 text-xs pt-6 text-white">
       <img
           className="inline-block brand-icon"
-          src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.02.11%20PM.jpeg?alt=media&token=183c14ff-4dc0-40ed-bc16-8b3d5e2cf688"
+          src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
         />
-        <b className="text-red-500">Dash</b>board
+        <b className="text-red-500 pl-2">Dash</b>board
       </p>
       </Link>
       <div className="flex flex-wrap overflow-hidden pb-6">
         <div className="w-1/3 ">
           <img
             className=" mt-2 icon-menu  object-center opacity-20	"
-            src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
+            src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-04.png?alt=media&token=7dd075e0-7e4d-46bc-b7f7-1e59021e1e74"
           />
         </div>
         <div className="w-2/3  ">
@@ -54,7 +54,7 @@ export default function Menu() {
          <div className="w-1/3 ">
           <img
             className=" mt-2 icon-menu  object-center opacity-20	"
-            src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
+            src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-05.png?alt=media&token=9140c0ba-29be-45ec-92d2-663e3f2c9605"
           />
         </div>
         <div className="w-2/3  ">
@@ -82,7 +82,7 @@ export default function Menu() {
          <div className="w-1/3 ">
           <img
             className=" mt-2 icon-menu  object-center opacity-20	"
-            src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
+            src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-03.png?alt=media&token=c24abdf9-073e-47bd-a0ac-8a408553df03"
           />
         </div>
         <div className="w-2/3  ">
@@ -110,7 +110,7 @@ export default function Menu() {
         <div className="w-1/3 ">
           <img
             className="mt-2 icon-menu  object-center opacity-20	"
-            src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/20176.png?alt=media&token=95585479-cf4c-48d1-a605-7a27ee8a3685"
+            src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-02.png?alt=media&token=e5d34a33-ee2f-45a7-9374-d4a7e060ba83"
           />
         </div>
         <div className="w-2/3 pb-4 ">
@@ -141,12 +141,12 @@ export default function Menu() {
                 VIP
               </NavLink>
               <img
-             className="inline-block brand-icon float-right mr-5"
-             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.33.15%20PM.jpeg?alt=media&token=3273a79c-b3a7-4b4c-8a1d-89977b3f8c43"
+             className="inline-block brand-iconvip float-right mr-5"
+             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-06.png?alt=media&token=9028a99e-6d2e-497c-a7c3-f404b3da3fd5"
              />
               <img
-             className="inline-block brand-icon float-right"
-             src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2012.33.06%20PM.jpeg?alt=media&token=d1f177c2-8476-439e-86a2-29297cf251bf"
+             className="inline-block brand-iconvip float-right"
+             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-07.png?alt=media&token=01c4c10c-bb22-4322-8293-4d859409be8d"
              />
              </li>
          </ul>

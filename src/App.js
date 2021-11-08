@@ -23,13 +23,14 @@ import Operaciones from './Operaciones';
 import Comercial from './Comercial';
 import Vip from './Vip';
 import Menu from './components/Menu';
+import BitacoraCovid from './BitacoraCovid';
 
 export default function App() {
   return (
     <Router>
       <div className="flex flex-wrap overflow-hidden">
         <Menu />
-        <div className="w-5/6 min-w-min p-5 bg-gray-100 overflow-hidden">
+        <div className="w-5/6 min-w-min h-screen p-5 bg-gray-100 overflow-auto">
           <Switch>
             <Route path="/almacen">
               <Almacen />
@@ -71,6 +72,9 @@ export default function App() {
             </Route>
             <Route path="/comercial">
               <Comercial />
+            </Route>
+            <Route path="/bitacoracovid">
+              <BitacoraCovid />
             </Route>
             <Route path="/vip">
               <Vip />

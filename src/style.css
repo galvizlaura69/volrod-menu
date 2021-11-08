@@ -7,10 +7,12 @@ p {
   display: flex;
   width: 30px;
   height: auto;
-  filter: invert(100);
 }
 .menu .brand-icon {
-  width: 30px;
+  width: 25px;
+}
+.menu .brand-iconvip {
+  width: 15px;
 }
 
 .menu {
@@ -48,10 +50,25 @@ p {
 }
 
 .menu .text-xs {
-  font-size: 10px;
+  font-size: 0.8em;
 }
 
 .seleccionado{
   background-color: red;
   color: white;
 }
+
+.boton_generico{
+  background:rgba(128, 128, 128, 0.493);
+  padding: 10px 15px;
+  color: white;
+  margin:2px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+input,select,.text_area{
+height: 30px;
+}
+
+
