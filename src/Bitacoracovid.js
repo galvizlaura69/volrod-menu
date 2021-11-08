@@ -38,11 +38,11 @@ export default function BitacoraCovid() {
             <option value="hostal">Hostal</option>
             <option value="nucleofamiliar">Nucleo familiar</option>
           </select>
-          <label className="w-1/5 pl-3">Nombres </label>
+          <label className="w-1/5 pl-3">Nombre de alojamiento </label>
           <textarea className="border-gray-500 border w-2/5  ml-2 text_area" placeholder="Laura camilo" required />
         </div>
         <div className="flex mb-10">
-          <label className="w-1/5">Dirrección </label>
+          <label className="w-1/5">Dirección alojamiento </label>
           <input className="border-gray-500 border w-4/5  ml-2" type="text" placeholder=" cra ..." required />
         </div>
         <div className="flex mb-10">
@@ -52,11 +52,11 @@ export default function BitacoraCovid() {
             <option value="publico">Núcleo familiar</option>
             <option value="ninguno">Restaurante</option>
           </select>
-          <label className="w-1/5 p-3">Nombre </label>
+          <label className="w-1/5 p-3">Nombre restaurante </label>
           <textarea className="border-gray-500 border w-2/5  ml-2 text_area" placeholder="Laura camilo" required />
         </div>
         <div className="flex mb-10">
-          <label className="w-1/5">Dirrección </label>
+          <label className="w-1/5">Dirección restaurante</label>
           <input className="border-gray-500 border w-4/5  ml-2" type="text" placeholder=" cra ..." required />
         </div>
         <div className="flex mb-10">
