@@ -8,6 +8,7 @@ export default function Reportediario() {
       <h1>Reporte diario</h1>
          <Link  to="./bitacoracovid"><p className="boton_generico">Bitacora Covid-19</p></Link>
          <Link to="./"><p className="boton_generico">Reporte diario ADEMINCOL</p></Link>
+         <Link  to="./pagetablecovid"><p className="boton_generico"> Revisar Bitacora Covid-19</p></Link>
 
     </div>
   );
