@@ -31,7 +31,7 @@ export default function App() {
     <Router>
       <div className="flex flex-wrap overflow-hidden">
         <Menu />
-        <div className=" max-w-5/6 w-5/6 h-screen p-5 bg-gray-100 overflow-auto">
+        <div className="contenido max-w-5/6 w-5/6 h-screen p-5 bg-gray-100 overflow-auto">
           <Switch>
             <Route path="/almacen">
               <Almacen />

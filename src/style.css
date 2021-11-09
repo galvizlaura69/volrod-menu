@@ -77,7 +77,9 @@ height: 30px;
 }
 
 @media  (min-width:1600px){
- 
+ .menu{
+   max-width: 20%;
+ }
   .menu p{
     margin-bottom: 18px;
   }
@@ -100,10 +102,29 @@ height: 30px;
   }
   .menu .brand-iconvip {
     width: 20px;
-    float: right;
+    right: 10px;
   }
   .menu-logo{
     width: 180px;
   }
-
+  .contenido{
+    max-width: 80.2%;
+  }
 }
+@media  (min-width:1800px){
+  .menu{
+    max-width: 20%;}
+
+   .contenido{
+     max-width: 82.4%;
+   }
+ }
+
+ @media  (min-width:1900px){
+  .menu{
+    max-width: 20%;}
+
+   .contenido{
+     max-width: 83.4%;
+   }
+ }
