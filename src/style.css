@@ -76,4 +76,34 @@ input,select,.text_area{
 height: 30px;
 }
 
+@media  (min-width:1600px){
+ 
+  .menu p{
+    margin-bottom: 18px;
+  }
+  .menu .icon-menu{
+    width: 50px;
+  }
+  .menu .brand-icon{
+    width: 44px;
+    margin-bottom: 20px;
+  }
+  .menu .text-xs{
+    font-size: 20px;
+  }
+  .menu li{
+    margin-top:1px;
+  }
+  .menu ul{
+    width: 250px;
+    margin-bottom: 30px;
+  }
+  .menu .brand-iconvip {
+    width: 20px;
+    float: right;
+  }
+  .menu-logo{
+    width: 180px;
+  }
 
+}
