@@ -2,6 +2,10 @@ h1,
 p {
   font-family: Lato;
 }
+.menu-logo{
+  width: 100px;
+  height: auto;
+}
 
 .menu .icon-menu {
   display: flex;
@@ -65,10 +69,62 @@ p {
   margin:2px;
   text-decoration: none;
   border-radius: 10px;
+  display: inline-block;
 }
 
 input,select,.text_area{
 height: 30px;
 }
 
+@media  (min-width:1600px){
+ .menu{
+   max-width: 20%;
+ }
+  .menu p{
+    margin-bottom: 18px;
+  }
+  .menu .icon-menu{
+    width: 50px;
+  }
+  .menu .brand-icon{
+    width: 44px;
+    margin-bottom: 20px;
+  }
+  .menu .text-xs{
+    font-size: 20px;
+  }
+  .menu li{
+    margin-top:1px;
+  }
+  .menu ul{
+    width: 250px;
+    margin-bottom: 30px;
+  }
+  .menu .brand-iconvip {
+    width: 20px;
+    right: 10px;
+  }
+  .menu-logo{
+    width: 180px;
+  }
+  .contenido{
+    max-width: 80.2%;
+  }
+}
+@media  (min-width:1800px){
+  .menu{
+    max-width: 20%;}
 
+   .contenido{
+     max-width: 82.4%;
+   }
+ }
+
+ @media  (min-width:1900px){
+  .menu{
+    max-width: 20%;}
+
+   .contenido{
+     max-width: 83.4%;
+   }
+ }

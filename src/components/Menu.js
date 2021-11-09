@@ -5,11 +5,11 @@ export default function Menu() {
   return (
     <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
       <div className="listadomenu h-4/5 pl-4">
-      <img className=" m-auto mt-5 w-3/5" src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.02%20AM.jpeg?alt=media&token=d4216141-6be3-4f1b-8258-d19b8dcece17"/>
+      <img className=" m-auto mt-5 w-3/5 menu-logo" src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/logo-02.png?alt=media&token=5c545e59-ca54-4612-89d2-467e4fbd8566"/>
       <h2 className=" text-xs pt-6 text-white">
         <img
           className="inline-block brand-icon"
-          src="https://firebasestorage.googleapis.com/v0/b/tienda-5bf0e.appspot.com/o/WhatsApp%20Image%202021-10-29%20at%2011.47.18%20AM.jpeg?alt=media&token=b9882166-61f9-43a5-bcb1-6b65c923da8d"
+          src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/logo-03.png?alt=media&token=d5e97ddf-80b5-4b90-9652-a1431d9a8aaa"
         />
         <b className="text-red-500 pl-2">Bienvenido</b> superadmin
       </h2>
@@ -19,7 +19,7 @@ export default function Menu() {
           className="inline-block brand-icon"
           src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
         />
-        <b className="text-red-500 pl-2">Dash</b>board
+        <b className="text-red-500 pl-2"> Dash</b>board
       </p>
       </Link>
       <div className="flex flex-wrap overflow-hidden pb-6">
