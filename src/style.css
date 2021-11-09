@@ -2,6 +2,10 @@ h1,
 p {
   font-family: Lato;
 }
+.menu-logo{
+  width: 100px;
+  height: auto;
+}
 
 .menu .icon-menu {
   display: flex;
