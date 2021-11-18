@@ -23,8 +23,9 @@ import Operaciones from './Operaciones';
 import Comercial from './Comercial';
 import Vip from './Vip';
 import Menu from './components/Menu';
-import BitacoraCovid from './BitacoraCovid1';
 import PageTableCovid from './PageTablaCovid';
+import FiltroInventario from './FiltroInventario';
+import BitacoraCovid19 from './BitacoraCovid19';
 
 export default function App() {
   return (
@@ -74,16 +75,18 @@ export default function App() {
             <Route path="/comercial">
               <Comercial />
             </Route>
-            <Route path="/bitacoracovid">
-              <BitacoraCovid />
-            </Route>
             <Route path="/pagetablecovid">
               <PageTableCovid />
             </Route>
             <Route path="/vip">
               <Vip />
             </Route>
-
+            <Route path="/filtroinventario">
+              <FiltroInventario/>
+              </Route>
+             <Route path="/bitacoracovid19">
+               <BitacoraCovid19/>
+               </Route>   
             <Route path="/">
               <Inicio />
             </Route>
