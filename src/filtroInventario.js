@@ -128,7 +128,7 @@ export default function FiltroInventario() {
                         <input
                             type="text"
                             placeholder="MARCA"
-                            className="filtros"
+                            className="filtros border border-gray-500"
                             onChange={inputMarcaChange}
                             name="nombre"
                             value={filtroMarca}>
@@ -141,7 +141,7 @@ export default function FiltroInventario() {
                         <input 
                             type="text"
                             placeholder="NOMBRE EQUIPO"
-                            className="filtros"
+                            className="filtros border border-gray-500"
                             onChange={inputNombreDelEquipoChange}
                             name="nombre"
                             value={filtroNombreDelEquipo}>
@@ -154,7 +154,7 @@ export default function FiltroInventario() {
                         <input
                             type="text"
                             placeholder="EST EQUIPO"
-                            className="filtros"
+                            className="filtros border border-gray-500"
                             onChange={inputEstadoDelEquipoChange}
                             name="nombre"
                             value={filtroEstadoDelEquipo}>
@@ -167,7 +167,7 @@ export default function FiltroInventario() {
                         <input 
                             type="text"
                             placeholder="EST CERTIFICADO"
-                            className="filtros"
+                            className="filtros border border-gray-500"
                             onChange={inputEstadoCertificacionChange}
                             name="nombre"
                             value={filtroEstadoCertificacion}>
