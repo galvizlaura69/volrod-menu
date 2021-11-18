@@ -8,13 +8,13 @@ export default function BitacoraCovid19() {
             <form className="formulario">
                 <div className="flex  flex-wrap ">
                     <div className="w-1/5 p-1 flex flex-wrap">
-                        <div className="w-1/3 pt-10">
+                        <div className="w-1/3 pt-14">
                             <img
                                 className="logo-formularios float-right"
                                 src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/logo-03.png?alt=media&token=d5e97ddf-80b5-4b90-9652-a1431d9a8aaa"
                             />
                         </div>
-                        <div className="w-2/3 pt-10">
+                        <div className="w-2/3 pt-14">
                             <p className="texto-login">Apellidos y Nombres</p>
                             <p className="texto-login">Cargo</p>
                             <p className="texto-login">Documento de identidad</p>
@@ -57,7 +57,7 @@ export default function BitacoraCovid19() {
                             <textarea className="border-gray-500 border text_area" placeholder="Donde se desarrollo la actividad" required />
                         </div>
                     </div>
-                    <div className=" w-1/5 pt-4">
+                    <div className=" w-1/5 pt-4 ajuste-distancia">
                         <div className="input-small">
                             <label className="label">Actividad desarrollada</label>
                             <textarea className="border-gray-500 border text_area" placeholder="Describa la actividad" required />
@@ -78,7 +78,7 @@ export default function BitacoraCovid19() {
                             <textarea className="border-gray-500 border text_area" placeholder="donde" required />
                         </div>
                     </div>
-                    <div className=" w-1/5 pt-4">
+                    <div className=" w-1/5 pt-4 ajuste-distancia">
                         <div className="input-small">
                             <label className="label">Nombre de alojamiento </label>
                             <input className="border-gray-500 border w-full" type="text" placeholder="1 hora" required />
@@ -99,7 +99,7 @@ export default function BitacoraCovid19() {
                             <textarea className="border-gray-500 border text_area" placeholder="donde" required />
                         </div>
                     </div>
-                    <div className=" w-1/5 pt-4">
+                    <div className=" w-1/5 pt-4 ajuste-distancia">
                         <div className="input-small">
                             <label className="label">Nombre de restaurante </label>
                             <input className="border-gray-500 border w-full" type="text" placeholder="1 hora" required />
@@ -124,7 +124,7 @@ export default function BitacoraCovid19() {
                             </select>
                         </div>
                     </div>
-                    <div className=" w-1/5 pt-4">
+                    <div className=" w-1/5 pt-4 ajuste-distancia">
                         <div className="input-small">
                             <label className="label">EPP Bioseguridad </label>
                             <select className="border-gray-500 border w-full ">

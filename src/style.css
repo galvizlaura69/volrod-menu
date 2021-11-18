@@ -128,6 +128,9 @@ width: 100%;
    .label-small{
     padding-top: 20px;}
  }
+ .ajuste-distancia{
+   padding-top:23px;
+ }
 
  @media  (min-width:1900px){
   .menu{
@@ -185,4 +188,21 @@ font-size: 0.8em;
 }
  .formulario{
    padding-bottom: 70px;
+ }
+
+ .filtros{
+   display: block;
+   width: 100%;
+ }
+
+ .boton_filtro{
+   padding: 8px ;
+   display: block;
+   margin: auto;
+   margin-top: 6px;
+   width: 100%;
+   text-decoration: none;
+   background: gray;
+   color: white;
+   font-size:13px;
  }
