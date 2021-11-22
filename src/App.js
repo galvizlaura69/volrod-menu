@@ -5,8 +5,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useParams,
 } from 'react-router-dom';
 import Almacen from './Almacen';
 import Sistemas from './Sistemas';
@@ -26,7 +24,7 @@ import Menu from './components/Menu';
 import PageTableCovid from './PageTablaCovid';
 import FiltroInventario from './FiltroInventario';
 import BitacoraCovid19 from './BitacoraCovid19';
-import TablaInventarioRepuestos from './tablaInventarioRepuestos';
+import TablaInventarioRepuestos from './TablaInventarioRepuestos';
 
 export default function App() {
   return (
