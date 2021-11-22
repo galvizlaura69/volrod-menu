@@ -19,6 +19,7 @@ export default function BitacoraCovid19() {
                             <p className="texto-login">Cargo</p>
                             <p className="texto-login">Documento de identidad</p>
                         </div>
+     
                     </div>
 
                     <div className="w-1/5">
@@ -53,7 +54,7 @@ export default function BitacoraCovid19() {
                 <div className="flex  flex-wrap ">
                     <div className="w-2/5">
                         <div className="input-small">
-                            <label className="label">Lugar (Departamento, Municio, Vereda)</label>
+                            <label className="label">Lugar (Departamento, Municipio, Vereda)</label>
                             <textarea className="border-gray-500 border text_area" placeholder="Donde se desarrollo la actividad" required />
                         </div>
                     </div>
@@ -124,7 +125,7 @@ export default function BitacoraCovid19() {
                             </select>
                         </div>
                     </div>
-                    <div className=" w-1/5 pt-4 ajuste-distancia">
+                    <div className=" w-1/5 pt-3 ajuste-distancia">
                         <div className="input-small">
                             <label className="label">EPP Bioseguridad </label>
                             <select className="border-gray-500 border w-full ">

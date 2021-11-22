@@ -26,6 +26,7 @@ import Menu from './components/Menu';
 import PageTableCovid from './PageTablaCovid';
 import FiltroInventario from './FiltroInventario';
 import BitacoraCovid19 from './BitacoraCovid19';
+import TablaInventarioRepuestos from './tablaInventarioRepuestos';
 
 export default function App() {
   return (
@@ -78,6 +79,9 @@ export default function App() {
             <Route path="/pagetablecovid">
               <PageTableCovid />
             </Route>
+            <Route path="/tablainventariorepuestos">
+              <TablaInventarioRepuestos/>
+              </Route>
             <Route path="/vip">
               <Vip />
             </Route>
@@ -87,6 +91,7 @@ export default function App() {
              <Route path="/bitacoracovid19">
                <BitacoraCovid19/>
                </Route>   
+
             <Route path="/">
               <Inicio />
             </Route>

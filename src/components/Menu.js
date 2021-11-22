@@ -5,7 +5,7 @@ export default function Menu() {
   return (
     <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
       <div className="listadomenu h-4/5 pl-4">
-      <img className=" m-auto mt-5 w-3/5 menu-logo" src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/logo-02.png?alt=media&token=5c545e59-ca54-4612-89d2-467e4fbd8566"/>
+      <img className=" m-auto mt-5 w-3/5 menu-logo" src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Logo-Intra.png?alt=media&token=d454ac95-6198-4ffc-a0f1-fa6e6dddcf22"/>
       <h2 className=" text-xs pt-6 text-white">
         <img
           className="inline-block brand-icon"
@@ -71,7 +71,7 @@ export default function Menu() {
             </li>
             <li>
               <NavLink className="block text-xs text-gray-400 " activeClassName="bg-red-800"   to="/solicitudesth">
-                SOlICITUDES TH
+                SOLICITUDES TH
               </NavLink>
             </li>
           </ul>
