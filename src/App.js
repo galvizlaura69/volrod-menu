@@ -5,8 +5,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useParams,
 } from 'react-router-dom';
 import Almacen from './Almacen';
 import Sistemas from './Sistemas';
@@ -26,6 +24,8 @@ import Menu from './components/Menu';
 import PageTableCovid from './PageTablaCovid';
 import FiltroInventario from './FiltroInventario';
 import BitacoraCovid19 from './BitacoraCovid19';
+import TablaInventarioRepuestos from './TablaInventarioRepuestos';
+import FormularioDañoSistemas from './FormularioDañoSistemas';
 
 export default function App() {
   return (
@@ -37,6 +37,12 @@ export default function App() {
             <Route path="/almacen">
               <Almacen />
             </Route>
+            <Route path="/filtroinventario">
+              <FiltroInventario/>
+              </Route>
+              <Route path="/tablainventariorepuestos">
+              <TablaInventarioRepuestos/>
+              </Route>
 
             <Route path="/talentohumano">
               <Talentohumano />
@@ -45,48 +51,59 @@ export default function App() {
             <Route path="/sistemas">
               <Sistemas />
             </Route>
+            <Route path="/formulariodañosistemas">
+               <FormularioDañoSistemas/>
+               </Route> 
+
             <Route path="/vehiculos">
               <Vehiculos />
             </Route>
+
             <Route path="/reportediario">
               <Reportediario />
             </Route>
-            <Route path="/talentohumano">
-              <Talentohumano />
-            </Route>
-            <Route path="/solicitudesth">
-              <Solicitudesth />
-            </Route>
-            <Route path="/contabilidad">
-              <Contabilidad/>
-            </Route>
-            <Route path="/compras">
-              <Compras />
-            </Route>
-            <Route path="/calidad">
-              <Calidad />
-            </Route>
-            <Route path="/hse">
-              <Hse />
-            </Route>
-            <Route path="/operaciones">
-              <Operaciones />
-            </Route>
-            <Route path="/comercial">
-              <Comercial />
-            </Route>
+            <Route path="/bitacoracovid19">
+               <BitacoraCovid19/>
+               </Route> 
             <Route path="/pagetablecovid">
               <PageTableCovid />
             </Route>
+
+            <Route path="/talentohumano">
+              <Talentohumano />
+            </Route>
+
+            <Route path="/solicitudesth">
+              <Solicitudesth />
+            </Route>
+
+            <Route path="/contabilidad">
+              <Contabilidad/>
+            </Route>
+
+            <Route path="/compras">
+              <Compras />
+            </Route>
+
+            <Route path="/calidad">
+              <Calidad />
+            </Route>
+
+            <Route path="/hse">
+              <Hse />
+            </Route>
+
+            <Route path="/operaciones">
+              <Operaciones />
+            </Route>
+
+            <Route path="/comercial">
+              <Comercial />
+            </Route>
+
             <Route path="/vip">
               <Vip />
-            </Route>
-            <Route path="/filtroinventario">
-              <FiltroInventario/>
-              </Route>
-             <Route path="/bitacoracovid19">
-               <BitacoraCovid19/>
-               </Route>   
+            </Route>  
             <Route path="/">
               <Inicio />
             </Route>
