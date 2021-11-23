@@ -13,7 +13,7 @@ export default function Menu() {
   const [comprobandoIcono4, setComprobandoIcono4] = useState(false);
   const [comprobandoDashBoardIcono, setComprobandoDashBoardIcono] = useState(false);
 
-  // se crea la lista de objetos 
+  // se crea la lista de los arreglos que debe reconocer cada icono
 
   const primerIconoMenu = ['/almacen', '/vehiculos', '/sistemas'];
   const segundoIconoMenu = ['/reportediario', '/talentohumano', '/solicitudesth'];
@@ -25,14 +25,14 @@ export default function Menu() {
 
   const location = useLocation();
 
-  // se crea la funcion para que 
+  // se crea la funcion para que los setee  
 
   const comprobarUrl = (listaARevisar,seteadorDeEstados) => {
     const resultadobusqueda = listaARevisar.includes(location.pathname);
     seteadorDeEstados(resultadobusqueda);  
   };
 
-  //
+  //para que se usen cada vez se actualice el estado
 
   useEffect(async () => {
     comprobarUrl(primerIconoMenu ,setComprobandoIcono1);
@@ -178,7 +178,7 @@ export default function Menu() {
       <div className="h-1/5 bg-gray-900">
         <ul className="menu-vip">
           <li>
-            <NavLink className=" p-1 pl-5 text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/vip">
+            <NavLink className=" p-1 pl-5 pr-8 text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/vip">
               VIP
             </NavLink>
             <img
