@@ -21,11 +21,11 @@ export default function Menu() {
   const cuartoIconoMenu =['/hse', '/operaciones', '/comercial'];
   const dashBoardIcono =['/'];
 
-  //
+  // se usa el location para que los encuentre 
 
   const location = useLocation();
 
-  //
+  // se crea la funcion para que 
 
   const comprobarUrl = (listaARevisar,seteadorDeEstados) => {
     const resultadobusqueda = listaARevisar.includes(location.pathname);
@@ -157,17 +157,17 @@ export default function Menu() {
           <div className="w-2/3 pb-4 ">
             <ul>
               <li>
-                <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/hse">
+                <NavLink className=" block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/hse">
                   HSE
                 </NavLink>
               </li>
               <li>
-                <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" b to="/operaciones">
+                <NavLink className=" block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" b to="/operaciones">
                   OPERACIONES
                 </NavLink>
               </li>
               <li>
-                <NavLink className="block  text-xs text-gray-400" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/comercial">
+                <NavLink className="block text-xs text-gray-400" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/comercial">
                   COMERCIAL
                 </NavLink>
               </li>
@@ -178,7 +178,7 @@ export default function Menu() {
       <div className="h-1/5 bg-gray-900">
         <ul className="menu-vip">
           <li>
-            <NavLink className=" p-2 pl-5 text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/vip">
+            <NavLink className=" p-1 pl-5 text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/vip">
               VIP
             </NavLink>
             <img
