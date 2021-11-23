@@ -247,12 +247,13 @@ font-size: 0.8em;
    saturate(600%)
    contrast(0.8);
    opacity: 0.6;
+   margin-top: 10px;
    width: 32px;
 }
 .menu .icon-menu {
   display: flex;
   width: 32px;
   height: auto;
-  margin-top: 2px;
+  margin-top: 10px;
   opacity:0.2;
 }

@@ -1,13 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
+import axios from 'axios';
+axios.defaults.timeout = 100000;
 
 export default function BitacoraCovid19() {
+
+    const [fechaReporte, setFechaReporte] = useState(null);
+    const [tiempoActividad, setTiempoActividad] = useState(null);
+    
+
+
+    const handleFechaReporte = (e) => {
+        console.log(e.target.value);
+
+        setFechaReporte(e.target.value);
+    };
+
+    const handleTiempoActividad =(e) =>{
+        console.log(e.target.value);
+         
+        setTiempoActividad(e.target.value);
+    };
+
+    const handleGuardar =(e) =>{
+    
+        const objetoParaGuardar = {
+            fechaReportada :fechaReporte,
+            tiempoActividad:tiempoActividad,
+        };
+        console.log(objetoParaGuardar);
+        axios.post('google.com', objetoParaGuardar) 
+    }
+
+
+
+
+
+
+
     return (
         <div className=" w-4/5">
             <h1 className="pb-5 text-gray-600"> BITACORA COVID-19</h1>
             <form className="formulario">
                 <div className="flex  flex-wrap ">
-                    <div className="w-1/5 p flex flex-wrap "> 
+                    <div className="w-1/5 p flex flex-wrap ">
                         <div className="w-1/3 pt-14 p-3">
                             <img
                                 className="logo-formularios float-right"
@@ -25,13 +61,19 @@ export default function BitacoraCovid19() {
                     <div className="w-1/5">
                         <div className="input-small ">
                             <label className="label pt-5 label-small-2">Fecha de reporte </label>
-                            <input className="border-gray-400 border w-full bg-gray-200 pequeños" type="date" placeholder=" 00/00/0000" required />
+                            <input className="border-gray-400 border w-full bg-gray-200 pequeños" type="date" placeholder=" 00/00/0000"
+                                required />
                         </div>
                     </div>
                     <div className="w-1/5 ">
                         <div className="input-small ">
                             <label className="label" >Numero de personas con las que tuvo contacto </label>
-                            <input className="border-gray-400 border w-full bg-gray-200 pequeños" type="number" placeholder="0" required />
+                            <input className="border-gray-400 border w-full bg-gray-200 pequeños"
+                                type="number"
+                                placeholder="0"
+                                onChange={handleFechaReporte}
+                                value={fechaReporte}
+                                required />
                         </div>
                     </div>
                     <div className="w-1/5">
@@ -46,7 +88,12 @@ export default function BitacoraCovid19() {
                     <div className="w-1/5 ">
                         <div className="input-small">
                             <label className="label label-small">Tiempo que duro la actividad </label>
-                            <input className="border-gray-400 border w-full bg-gray-200 pequeños" type="text" placeholder="Hrs,Min" required />
+                            <input className="border-gray-400 border w-full bg-gray-200 pequeños"
+                             type="text" 
+                             placeholder="Hrs,Min" 
+                             onChange={handleTiempoActividad}
+                             value={tiempoActividad}
+                             required />
                         </div>
                     </div>
                 </div>
@@ -149,7 +196,9 @@ export default function BitacoraCovid19() {
                 <div className="flex flex-wrap">
                     <div className="w-3/5"></div>
                     <div className="flex flex-row-reverse w-2/5">
-                        <button className="boton_form bg-red-600">GUARDAR</button>
+                        <button className="boton_form bg-red-600"
+                         onClick={handleGuardar}
+                        >GUARDAR</button>
                         <button className="boton_form bg-gray-400">CANCELAR</button>
                     </div>
                 </div>
