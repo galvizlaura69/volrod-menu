@@ -6,24 +6,42 @@ export default function Menu() {
 
   //creamos un estado para comprabar por
   // medio de buleanos si el elemento esta
+
   const [comprobandoIcono1, setComprobandoIcono1] = useState(false);
+  const [comprobandoIcono2, setComprobandoIcono2] = useState(false);
+
+  //comentar que se hace aqui
 
   const primerIconoMenu = ['/almacen', '/vehiculos', '/sistemas'];
-  
+  const segundoIconoMenu = ['/reportediario', '/talentohumano', '/solicitudesth']
+
+  //
+
   const location = useLocation();
+
+  //
 
   const comprobarUrl = (listaARevisar) => {
     const resultadobusqueda = listaARevisar.includes(location.pathname);
     console.log(resultadobusqueda);
     console.log(location);
     setComprobandoIcono1(resultadobusqueda);
-  }; 
+  };
 
-  useEffect(async () => {  
-    console.log(location.pathname); 
+  const comprobarUrl2 = (listaARevisar2) => {
+    const resultadobusqueda2 = listaARevisar2.includes(location.pathname);
+    console.log(resultadobusqueda2);
+    console.log(location);
+    setComprobandoIcono2(resultadobusqueda2);
+  };
+
+  //
+
+  useEffect(async () => {
+    console.log(location.pathname);
     comprobarUrl(primerIconoMenu);
-
-  },[location]);
+    comprobarUrl2(segundoIconoMenu);
+  }, [location]);
 
 
   return (
@@ -38,13 +56,13 @@ export default function Menu() {
           <b className="text-red-500  pl-2">Bienvenido</b> superadmin
         </p>
         <Link className="block pb-6  text-xs" to="/">
-          <p className="pb-9 text-xs pt-8 text-white">
+          <h4 className="pb-9 text-xs pt-8 text-white">
             <img
               className="inline-block brand-icon2"
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
             />
-            <b className="text-red-500 pl-3">Dash</b>board
-          </p>
+            <b className="text-red-500 pl-4">Dash</b>board
+          </h4>
         </Link>
         <div className="flex flex-wrap overflow-hidden pb-6">
           <div className="w-1/3 ">
@@ -77,7 +95,7 @@ export default function Menu() {
         <div className="flex flex-wrap overflow-hidden pb-6">
           <div className="w-1/3 ">
             <img
-              className="  icon-menu	"
+              className={comprobandoIcono2 === true ? "iconorojo" : "icon-menu"}
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-05.png?alt=media&token=9140c0ba-29be-45ec-92d2-663e3f2c9605"
             />
           </div>
