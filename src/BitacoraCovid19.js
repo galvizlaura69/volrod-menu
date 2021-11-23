@@ -1,42 +1,53 @@
 import React, { useState } from 'react';
 import './style.css';
+import handleUniversal from './hooks/handleUniversal';
 import axios from 'axios';
 axios.defaults.timeout = 100000;
 
 export default function BitacoraCovid19() {
 
+    //Definir estados
+
     const [fechaReporte, setFechaReporte] = useState(null);
+    const [numeroPersonas, setNumeroPersonas] = useState(null);
+
     const [tiempoActividad, setTiempoActividad] = useState(null);
+
+    const [lugar, setLugar] = useState(null);
+    const [actividadDesarrollada, setActividadDesarrollada] = useState(null);
+    const [nombres, setNombres]= useState(null);
+
+    const [tipoAlojamiento, setTipoAlojamiento] = useState(null);
+    const [nombreAlojamiento, setNombreAlojamiento] = useState(null);
+    const [direccionAlojamiento, setDireccionAlojamiento] = useState(null);
     
+    const[tipoRestaurante, setTipoRestaurante] = useState(null);
+    const [nombreRestaurante, setNombreRestaurante] = useState(null);
+    const [direccionRestaurante, setDireccionRestaurante] = useState(null);
 
-
-    const handleFechaReporte = (e) => {
-        console.log(e.target.value);
-
-        setFechaReporte(e.target.value);
-    };
-
-    const handleTiempoActividad =(e) =>{
-        console.log(e.target.value);
-         
-        setTiempoActividad(e.target.value);
-    };
 
     const handleGuardar =(e) =>{
     
         const objetoParaGuardar = {
-            fechaReportada :fechaReporte,
+            fechaReporte :fechaReporte,
+            numeroPersonas :numeroPersonas,
             tiempoActividad:tiempoActividad,
+
+            lugar:lugar,
+            actividadDesarrollada: actividadDesarrollada,
+            nombres: nombres,
+
+            tipoAlojamiento: tipoAlojamiento,
+            nombreAlojamiento:nombreAlojamiento,
+            direccionAlojamiento: direccionAlojamiento,
+
+            tipoRestaurante: tipoRestaurante,
+            nombreRestaurante: nombreRestaurante,
+            direccionRestaurante: direccionRestaurante,
         };
         console.log(objetoParaGuardar);
         axios.post('google.com', objetoParaGuardar) 
     }
-
-
-
-
-
-
 
     return (
         <div className=" w-4/5">
@@ -61,7 +72,11 @@ export default function BitacoraCovid19() {
                     <div className="w-1/5">
                         <div className="input-small ">
                             <label className="label pt-5 label-small-2">Fecha de reporte </label>
-                            <input className="border-gray-400 border w-full bg-gray-200 pequeños" type="date" placeholder=" 00/00/0000"
+                            <input className="border-gray-400 border w-full bg-gray-200 pequeños" 
+                              type="date"
+                              placeholder=" 00/00/0000"
+                              onChange={(e) =>{handleUniversal(e,setFechaReporte)}}
+                              value={fechaReporte}
                                 required />
                         </div>
                     </div>
@@ -71,8 +86,8 @@ export default function BitacoraCovid19() {
                             <input className="border-gray-400 border w-full bg-gray-200 pequeños"
                                 type="number"
                                 placeholder="0"
-                                onChange={handleFechaReporte}
-                                value={fechaReporte}
+                                onChange={(e) =>{handleUniversal(e,setNumeroPersonas)}}
+                                value={numeroPersonas}
                                 required />
                         </div>
                     </div>
@@ -91,7 +106,7 @@ export default function BitacoraCovid19() {
                             <input className="border-gray-400 border w-full bg-gray-200 pequeños"
                              type="text" 
                              placeholder="Hrs,Min" 
-                             onChange={handleTiempoActividad}
+                             onChange={(e) =>{handleUniversal(e,setTiempoActividad)}}
                              value={tiempoActividad}
                              required />
                         </div>
@@ -102,19 +117,31 @@ export default function BitacoraCovid19() {
                     <div className="w-2/5">
                         <div className="input-small">
                             <label className="label">Lugar (Departamento, Municipio, Vereda)</label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Donde se desarrollo la actividad" required />
+                            <textarea className="border-gray-400 border text_area" 
+                            placeholder="Donde se desarrollo la actividad"
+                            onChange={(e) =>{handleUniversal(e,setLugar)}}
+                            value={lugar}
+                            required />
                         </div>
                     </div>
                     <div className=" w-1/5  ajuste-distancia">
                         <div className="input-small">
                             <label className="label">Actividad desarrollada</label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Describa la actividad" required />
+                            <textarea className="border-gray-400 border text_area"
+                             placeholder="Describa la actividad"
+                             onChange={(e) =>{handleUniversal(e,setActividadDesarrollada)}}
+                             value={actividadDesarrollada}
+                             required />
                         </div>
                     </div>
                     <div className=" w-2/5 ">
                         <div className="input-small">
                             <label className="label">Nombres</label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Con quien desarrollo la actividad" required />
+                            <textarea className="border-gray-400 border text_area"
+                             placeholder="Con quien desarrollo la actividad"
+                             onChange={(e) =>{handleUniversal(e,setNombres)}}
+                             value={nombres}
+                             required />
                         </div>
                     </div>
                 </div>
@@ -123,19 +150,31 @@ export default function BitacoraCovid19() {
                     <div className=" w-2/5 ">
                         <div className="input-small">
                             <label className="label">Tipo de alojamiento </label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Describa si era hotel,hostal,casa familiar,etc." required />
+                            <textarea className="border-gray-400 border text_area"
+                             placeholder="Describa si era hotel,hostal,casa familiar,etc."
+                             onChange={(e) =>{handleUniversal(e,setTipoAlojamiento)}}
+                             value={tipoAlojamiento}
+                             required />
                         </div>
                     </div>
                     <div className=" w-1/5 pt-4 ajuste-distancia">
                         <div className="input-small">
                             <label className="label">Nombre de alojamiento </label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Describa la actividad" required />
+                            <textarea className="border-gray-400 border text_area" 
+                            placeholder="Describa la actividad"
+                            onChange={(e) =>{handleUniversal(e,setNombreAlojamiento)}}
+                            value={nombreAlojamiento}
+                            required />
                         </div>
                     </div>
                     <div className="w-2/5">
                         <div className="input-small">
                             <label className="label">Dirección alojamiento </label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Dirección del lugar donde se hospedo" required />
+                            <textarea className="border-gray-400 border text_area" 
+                            placeholder="Dirección del lugar donde se hospedo" 
+                            onChange={(e) =>{handleUniversal(e,setDireccionAlojamiento)}}
+                            value={direccionAlojamiento}
+                            required />
                         </div>
                     </div>
                 </div>
@@ -144,19 +183,31 @@ export default function BitacoraCovid19() {
                     <div className=" w-2/5 ">
                         <div className="input-small">
                             <label className="label">Tipo de restaurante </label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Describa si era restaurante,casa familiar,etc." required />
+                            <textarea className="border-gray-400 border text_area"
+                             placeholder="Describa si era restaurante,casa familiar,etc."
+                             onChange={(e) =>{handleUniversal(e,setTipoRestaurante)}}
+                             value={tipoRestaurante}
+                             required />
                         </div>
                     </div>
                     <div className=" w-1/5  ajuste-distancia">
                         <div className="input-small">
                             <label className="label">Nombre de restaurante </label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Describa la actividad" required />
+                            <textarea className="border-gray-400 border text_area"
+                             placeholder="Describa la actividad"
+                             onChange={(e) =>{handleUniversal(e,setNombreRestaurante)}}
+                             value={nombreRestaurante}
+                             required />
                         </div>
                     </div>
                     <div className=" w-2/5">
                         <div className="input-small">
                             <label className="label">Dirección restaurante </label>
-                            <textarea className="border-gray-400 border text_area" placeholder="Dirección del restaurante " required />
+                            <textarea className="border-gray-400 border text_area"
+                             placeholder="Dirección del restaurante "
+                             onChange={(e) =>{handleUniversal(e,setDireccionRestaurante)}}
+                             value={direccionRestaurante}
+                             required />
                         </div>
                     </div>
                 </div>
@@ -184,7 +235,7 @@ export default function BitacoraCovid19() {
                     <div className=" w-2/5 ">
                         <div className="input-small ">
                             <label className="label">EPP Bioseguridad </label>
-                            <select className="border-gray-500 border w-full ">
+                            <select className="border-gray-400 border w-full ">
                                 <option value="quirurgico2">Tapabocas quirúrgico</option>
                                 <option value="antifluidos2 ">Tapabocas antifluidos</option>
                             </select>
