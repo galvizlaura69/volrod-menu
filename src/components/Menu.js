@@ -1,48 +1,55 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+
 
 export default function Menu() {
 
   //creamos un estado para comprabar por
   // medio de buleanos si el elemento esta
+  const [comprobandoIcono1, setComprobandoIcono1] = useState(false);
 
+  const primerIconoMenu = ['/almacen', '/vehiculos', '/sistemas'];
   
-  const [comprobando, setComprobando] = useState(true);
+  const location = useLocation();
 
-  const primericonomenu=['almacen','vehiculos','sistemas'];
-  
+  const comprobarUrl = (listaARevisar) => {
+    const resultadobusqueda = listaARevisar.includes(location.pathname);
+    console.log(resultadobusqueda);
+    console.log(location);
+    setComprobandoIcono1(resultadobusqueda);
+  }; 
 
-  const comprobarUrl =() =>{
-    primericonomenu.includes('almacen');
-    primericonomenu.includes('vehiculos');
-    primericonomenu.includes('sistemas');
-  }
+  useEffect(async () => {  
+    console.log(location.pathname); 
+    comprobarUrl(primerIconoMenu);
+
+  },[location]);
 
 
   return (
     <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
       <div className="listadomenu h-4/5 pl-4">
         <img className=" m-auto mt-5 w-3/5 menu-logo" src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Logo-Intra.png?alt=media&token=d454ac95-6198-4ffc-a0f1-fa6e6dddcf22" />
-        <h2 className=" text-xs pt-6 text-white">
+        <p className=" text-xs pt-6 text-white">
           <img
             className="inline-block brand-icon"
             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/logo-03.png?alt=media&token=d5e97ddf-80b5-4b90-9652-a1431d9a8aaa"
           />
-          <b className="text-red-500 pl-2">Bienvenido</b> superadmin
-        </h2>
+          <b className="text-red-500  pl-2">Bienvenido</b> superadmin
+        </p>
         <Link className="block pb-6  text-xs" to="/">
-          <p className="pb-5 text-xs pt-6 text-white">
+          <p className="pb-9 text-xs pt-8 text-white">
             <img
-              className="inline-block brand-icon"
+              className="inline-block brand-icon2"
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
             />
-            <b className="text-red-500 pl-2"> Dash</b>board
+            <b className="text-red-500 pl-3">Dash</b>board
           </p>
         </Link>
         <div className="flex flex-wrap overflow-hidden pb-6">
           <div className="w-1/3 ">
             <img
-              className={comprobando === true ? "iconorojo" : "icon-menu"}
+              className={comprobandoIcono1 === true ? "iconorojo" : "icon-menu"}
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-04.png?alt=media&token=7dd075e0-7e4d-46bc-b7f7-1e59021e1e74"
             />
           </div>

@@ -78,7 +78,11 @@ p {
 }
 
 .menu .brand-icon {
-  width: 25px;
+  width: 20px;
+  padding-left: 3px;
+}
+.menu .brand-icon2 {
+  width:26px;
 }
 .menu .brand-iconvip {
   width: 15px;
@@ -231,11 +235,11 @@ font-size: 0.8em;
    saturate(600%)
    contrast(0.8);
    opacity: 0.5;
-   width: 30px;
+   width: 32px;
 }
 .menu .icon-menu {
   display: flex;
-  width: 30px;
+  width: 32px;
   height: auto;
   margin-top: 2px;
   opacity:0.2;
