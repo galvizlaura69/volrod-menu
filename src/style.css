@@ -78,12 +78,24 @@ p {
 }
 
 .menu .brand-icon {
-  width: 22px;
+  width: 25px;
   padding-left: 3px;
 }
 .menu .brand-icon2 {
   width:26px;
+  display: inline-block;
+  filter: 
+  brightness(60);
+  opacity: 0.2;
 }
+
+.brand-rojo {
+  width:26px;
+  display: inline-block;
+  filter: unset;
+  opacity:1;
+}
+
 .menu .brand-iconvip {
   width: 15px;
 }
@@ -234,7 +246,7 @@ font-size: 0.8em;
    hue-rotate(-50deg)
    saturate(600%)
    contrast(0.8);
-   opacity: 0.5;
+   opacity: 0.6;
    width: 32px;
 }
 .menu .icon-menu {
