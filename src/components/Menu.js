@@ -5,42 +5,41 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 export default function Menu() {
 
   //creamos un estado para comprabar por
-  // medio de buleanos si el elemento esta
+  //medio de buleanos si el elemento esta comenzando en falso
 
   const [comprobandoIcono1, setComprobandoIcono1] = useState(false);
   const [comprobandoIcono2, setComprobandoIcono2] = useState(false);
+  const [comprobandoIcono3, setComprobandoIcono3] = useState(false);
+  const [comprobandoIcono4, setComprobandoIcono4] = useState(false);
+  const [comprobandoDashBoardIcono, setComprobandoDashBoardIcono] = useState(false);
 
-  //comentar que se hace aqui
+  // se crea la lista de los arreglos que debe reconocer cada icono
 
   const primerIconoMenu = ['/almacen', '/vehiculos', '/sistemas'];
-  const segundoIconoMenu = ['/reportediario', '/talentohumano', '/solicitudesth']
+  const segundoIconoMenu = ['/reportediario', '/talentohumano', '/solicitudesth'];
+  const tercerIconoMenu = ['/calidad', '/compras', '/contabilidad'];
+  const cuartoIconoMenu =['/hse', '/operaciones', '/comercial'];
+  const dashBoardIcono =['/'];
 
-  //
+  // se usa el location para que los encuentre 
 
   const location = useLocation();
 
-  //
+  // se crea la funcion para que los setee  
 
-  const comprobarUrl = (listaARevisar) => {
+  const comprobarUrl = (listaARevisar,seteadorDeEstados) => {
     const resultadobusqueda = listaARevisar.includes(location.pathname);
-    console.log(resultadobusqueda);
-    console.log(location);
-    setComprobandoIcono1(resultadobusqueda);
+    seteadorDeEstados(resultadobusqueda);  
   };
 
-  const comprobarUrl2 = (listaARevisar2) => {
-    const resultadobusqueda2 = listaARevisar2.includes(location.pathname);
-    console.log(resultadobusqueda2);
-    console.log(location);
-    setComprobandoIcono2(resultadobusqueda2);
-  };
-
-  //
+  //para que se usen cada vez se actualice el estado
 
   useEffect(async () => {
-    console.log(location.pathname);
-    comprobarUrl(primerIconoMenu);
-    comprobarUrl2(segundoIconoMenu);
+    comprobarUrl(primerIconoMenu ,setComprobandoIcono1);
+    comprobarUrl(segundoIconoMenu, setComprobandoIcono2);
+    comprobarUrl(tercerIconoMenu, setComprobandoIcono3);
+    comprobarUrl(cuartoIconoMenu, setComprobandoIcono4);
+    comprobarUrl(dashBoardIcono, setComprobandoDashBoardIcono );
   }, [location]);
 
 
@@ -48,17 +47,17 @@ export default function Menu() {
     <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
       <div className="listadomenu h-4/5 pl-4">
         <img className=" m-auto mt-5 w-3/5 menu-logo" src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Logo-Intra.png?alt=media&token=d454ac95-6198-4ffc-a0f1-fa6e6dddcf22" />
-        <p className=" text-xs pt-6 text-white">
+        <h6 className=" text-xs pt-6 text-white">
           <img
             className="inline-block brand-icon"
             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/logo-03.png?alt=media&token=d5e97ddf-80b5-4b90-9652-a1431d9a8aaa"
           />
           <b className="text-red-500  pl-2">Bienvenido</b> superadmin
-        </p>
+        </h6>
         <Link className="block pb-6  text-xs" to="/">
-          <h4 className="pb-9 text-xs pt-8 text-white">
+          <h4 className="pb-6 text-xs pt-8 text-white">
             <img
-              className="inline-block brand-icon2"
+              className={comprobandoDashBoardIcono === true ? "brand-rojo" : "brand-icon2"}
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
             />
             <b className="text-red-500 pl-4">Dash</b>board
@@ -123,7 +122,7 @@ export default function Menu() {
         <div className="flex flex-wrap overflow-hidden pb-6">
           <div className="w-1/3 ">
             <img
-              className=" mt-2 icon-menu  object-center opacity-20	"
+               className={comprobandoIcono3 === true ? "iconorojo" : "icon-menu"}
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-03.png?alt=media&token=c24abdf9-073e-47bd-a0ac-8a408553df03"
             />
           </div>
@@ -151,24 +150,24 @@ export default function Menu() {
         <div className="flex flex-wrap overflow-hidden pb-6">
           <div className="w-1/3 ">
             <img
-              className="mt-2 icon-menu  object-center opacity-20	"
+               className={comprobandoIcono4 === true ? "iconorojo" : "icon-menu"}
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-02.png?alt=media&token=e5d34a33-ee2f-45a7-9374-d4a7e060ba83"
             />
           </div>
           <div className="w-2/3 pb-4 ">
             <ul>
               <li>
-                <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/hse">
+                <NavLink className=" block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/hse">
                   HSE
                 </NavLink>
               </li>
               <li>
-                <NavLink className="block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" b to="/operaciones">
+                <NavLink className=" block text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" b to="/operaciones">
                   OPERACIONES
                 </NavLink>
               </li>
               <li>
-                <NavLink className="block  text-xs text-gray-400" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/comercial">
+                <NavLink className="block text-xs text-gray-400" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/comercial">
                   COMERCIAL
                 </NavLink>
               </li>
@@ -179,7 +178,7 @@ export default function Menu() {
       <div className="h-1/5 bg-gray-900">
         <ul className="menu-vip">
           <li>
-            <NavLink className=" p-2 pl-5 text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/vip">
+            <NavLink className=" p-1 pl-5 pr-8 text-xs text-gray-400 m-0" activeClassName="bg-red-700 bg-opacity-75 pl-1" to="/vip">
               VIP
             </NavLink>
             <img
