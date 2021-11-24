@@ -4,8 +4,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 
 export default function Menu() {
 
-  //creamos un estado para comprabar por
-  //medio de buleanos si el elemento esta comenzando en falso
+  //Por cada icono se crea un estado y por defecto el estado inicia en falso boleano
 
   const [comprobandoIcono1, setComprobandoIcono1] = useState(false);
   const [comprobandoIcono2, setComprobandoIcono2] = useState(false);
@@ -21,18 +20,22 @@ export default function Menu() {
   const cuartoIconoMenu =['/hse', '/operaciones', '/comercial'];
   const dashBoardIcono =['/'];
 
-  // se usa el location para que los encuentre 
+  // se usa el location para obtener el url acutual y  nos diga  basicamente 
+  //donde nos encontramos parados
 
   const location = useLocation();
 
-  // se crea la funcion para que los setee  
+  // comprabarUrl  recibe dos parametro,una lista que revisa y un seteador
+  // de  estado y dependiendo si location se encuentra o no en el 
+  //arreglo setea el estado que se le pase con true o false  
 
   const comprobarUrl = (listaARevisar,seteadorDeEstados) => {
     const resultadobusqueda = listaARevisar.includes(location.pathname);
     seteadorDeEstados(resultadobusqueda);  
   };
 
-  //para que se usen cada vez se actualice el estado
+//Para que se use cada vez que cambie location 
+//(es decir la ruta donde esta parado el visitante)
 
   useEffect(async () => {
     comprobarUrl(primerIconoMenu ,setComprobandoIcono1);
@@ -47,15 +50,15 @@ export default function Menu() {
     <div className=" menu w-1/6 overflow-hidden	h-screen bg-gray-800 ">
       <div className="listadomenu h-4/5 pl-4">
         <img className=" m-auto mt-5 w-3/5 menu-logo" src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Logo-Intra.png?alt=media&token=d454ac95-6198-4ffc-a0f1-fa6e6dddcf22" />
-        <h6 className=" text-xs pt-6 text-white">
+        <h5 className=" text-xs pt-6 text-white">
           <img
             className="inline-block brand-icon"
             src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/logo-03.png?alt=media&token=d5e97ddf-80b5-4b90-9652-a1431d9a8aaa"
           />
           <b className="text-red-500  pl-2">Bienvenido</b> superadmin
-        </h6>
+        </h5>
         <Link className="block pb-6  text-xs" to="/">
-          <h4 className="pb-6 text-xs pt-8 text-white">
+          <h4 className="pb-6  pt-8 text-white">
             <img
               className={comprobandoDashBoardIcono === true ? "brand-rojo" : "brand-icon2"}
               src="https://firebasestorage.googleapis.com/v0/b/volrod-menu.appspot.com/o/Icons-red-08.png?alt=media&token=dce14ad7-2a20-4436-ad8b-a01dc205c209"
