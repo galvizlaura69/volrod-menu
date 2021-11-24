@@ -34,7 +34,8 @@ export default function Menu() {
     seteadorDeEstados(resultadobusqueda);  
   };
 
-  //para que se usen cada vez se actualice el estado
+//Para que se use cada vez que cambie location 
+//(es decir la ruta donde esta parado el visitante)
 
   useEffect(async () => {
     comprobarUrl(primerIconoMenu ,setComprobandoIcono1);
